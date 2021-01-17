@@ -126,23 +126,30 @@ var interval = 10000;
 $(document).ready(function() {
 	var currentDate = new Date();
 	var futureDate  = new Date(2021, 0, 21);
+	// var futureDate  = new Date();
+	// futureDate.setSeconds(currentDate.getSeconds() - 20);
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
-	clock = $clock.FlipClock(diff, {
-		clockFace: 'DailyCounter',
-		countdown: true,
-		callbacks: {
-			interval: function() {
-				var time = this.factory.getTime().time;
-				if(time <= 10 && time > 0) {
-					pulse();
-				}
-				else if(time <= 0) {
-					celebrate();
+	if (diff < 0) {
+		celebrate();
+	}
+	else {
+		clock = $clock.FlipClock(diff, {
+			clockFace: 'DailyCounter',
+			countdown: true,
+			callbacks: {
+				interval: function() {
+					var time = this.factory.getTime().time;
+					if(time <= 10 && time > 0) {
+						pulse();
+					}
+					else if(time <= 0) {
+						celebrate();
+					}
 				}
 			}
-		}
-	});
+		});
+	}
 });
 
 function celebrate()

@@ -750,7 +750,6 @@ var FlipClock;
 			if(this.autoStart) {
 				this.start();
 			}
-
 		},
 		
 		/**
