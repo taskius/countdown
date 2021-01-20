@@ -15,12 +15,11 @@ body {
   color: white;
   position: absolute;
   font-size: 95px;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
   z-index: 50;
   margin: auto auto;
   line-height: 200px;
@@ -28,7 +27,57 @@ body {
   display: none;
 }
 .button {
+  background-color: rgb(151, 151, 151);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(151, 151, 151, 0.64);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: #b6b6b6;
+}
+
+.button:active {
+  background-color: #b6b6b6;
+  transform: translate(-50%, -45%);
+}
+
+.happy-birthday {
+  font-family: "Great Vibes";
+  font-size: 95px;
+  margin-top: 50px;
+}
+.hide {
+  display: none;
+}
+.main-message {
+  padding: 200px;
+  position: relative;
+  font-size: 50px;
   font-family: "Times New Roman", Times, serif;
+  line-height: 60px;
+  padding: 25px;
+  text-align: center;
+  z-index: 50;
+  color: white;
+  overflow: auto;
+  height: 100%;
 }
 canvas {
   display: block;

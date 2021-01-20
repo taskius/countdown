@@ -117,6 +117,7 @@
 var clock;
 var $clock = $('.clock');
 var $message = $('.message');
+var $mainMessage = $('.main-message');
 var $confetti = $('#confetti');
 var animations = ['bounce', 'pulse', 'rubberBand', 'swing', 'tada'];
 var current_animation = 0;
@@ -125,9 +126,9 @@ var interval = 10000;
 
 $(document).ready(function() {
 	var currentDate = new Date();
-	//var futureDate  = new Date(2021, 0, 21);
+	// var futureDate  = new Date(2021, 0, 21);
 	var futureDate  = new Date();
-	futureDate.setSeconds(currentDate.getSeconds() - 20);
+	futureDate.setSeconds(currentDate.getSeconds() - 4);
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 	if (diff < 0) {
@@ -164,6 +165,8 @@ function celebrate()
 		$message.addClass('animated flipInX').fadeIn();
 		timeout = setTimeout(bounce, interval);
 	}, 350);
+
+	setTimeout(function(){ $mainMessage.removeClass('hide'); }, 1000);
 }
 
 function pulse()
