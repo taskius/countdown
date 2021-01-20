@@ -118,6 +118,9 @@ var clock;
 var $clock = $('.clock');
 var $message = $('.message');
 var $mainMessage = $('.main-message');
+var $happyBirthday = $('.happy-birthday');
+var $description = $('description');
+var $button = $('button');
 var $confetti = $('#confetti');
 var animations = ['bounce', 'pulse', 'rubberBand', 'swing', 'tada'];
 var current_animation = 0;
@@ -166,7 +169,8 @@ function celebrate()
 		timeout = setTimeout(bounce, interval);
 	}, 350);
 
-	setTimeout(function(){ $mainMessage.removeClass('hide'); }, 1000);
+	$mainMessage.removeClass('hide');
+	$mainMessage.addClass('fade-in');
 }
 
 function pulse()
