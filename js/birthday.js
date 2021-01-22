@@ -125,7 +125,7 @@ var interval = 10000;
 
 $(document).ready(function() {
 	var currentDate = new Date();
-	var futureDate  = new Date(2021, 0, 21);
+	var futureDate  = new Date(2022, 0, 21);
 	// var futureDate  = new Date();
 	// futureDate.setSeconds(currentDate.getSeconds() - 20);
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
