@@ -1,1 +1,1 @@
-# Countdown for a friends birthday
+# Slideshow for a friends birthday
