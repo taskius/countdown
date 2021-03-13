@@ -8,17 +8,116 @@
 	<meta name="description" content="Bens Birthday Diet">
 	
 <style>
-	.jx-carousel-title {
-		display: none;
+	@media all and (max-width: 600px) {
+		body {
+			/*  */
+			background-color:red;
+		}
 	}
+	body {
+		background-color: #e6ddd7;
+		background-image: url("pics/brian1.png");
+			background-repeat: repeat;
+	}
+
+	.container {
+		display: grid;
+	}
+
+	.container img {
+		width: 100%;
+	}
+
+	.video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.video_container {
+		grid-column: 2 / span 4;
+		grid-row: 2 / span 3;
+
+		position: relative;
+		width: 61%;
+		height: 67%;
+	}
+
+	.one {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.two {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.three {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.four {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.five {
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.six {
+		grid-column: 3;
+		grid-row: 4;
+	}
+	.seven {
+		grid-column: 4;
+		grid-row: 4;
+	}
+	.eight {
+		grid-column: 4;
+		grid-row: 3;
+	}
+	.nine {
+		grid-column: 4;
+		grid-row: 2;
+	}
+	.ten {
+		grid-column: 4;
+		grid-row: 1;
+	}
+	.eleven {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.twelve {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+
 </style>
 
 </head>
 
 <body>
+	<div class="container">
+		<img class="one" src="pics\brian3.png" alt="brian" style="width:auto;">
+		<img class="two" src="pics\brian2.png" alt="brian" style="width:auto;">
+		<img class="three" src="pics\brian3.png" alt="brian" style="width:auto;">
+		<img class="four" src="pics\brian4.png" alt="brian" style="width:auto;">
+		<img class="five" src="pics\brian5.png" alt="brian" style="width:auto;">
+		<img class="six" src="pics\brian14.png" alt="brian" style="width:auto;">
+		<img class="seven" src="pics\brian7.png" alt="brian" style="width:auto;">
+		<img class="eight" src="pics\brian8.png" alt="brian" style="width:auto;">
+		<img class="nine" src="pics\brian9.png" alt="brian" style="width:auto;">
+		<img class="ten" src="pics\brian10.png" alt="brian" style="width:auto;">
+		<img class="eleven" src="pics\brian11.png" alt="brian" style="width:auto;">
+		<img class="twelve" src="pics\brian12.png" alt="brian" style="width:auto;">
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/Ma18yo55CXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+		<div class="video_container">
+			<iframe class="video" height="400px" width="800px" src="https://www.youtube.com/embed/Ma18yo55CXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+		</div>
+	</div>
 </body>
 </html>
 
