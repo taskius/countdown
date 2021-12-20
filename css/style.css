@@ -2244,26 +2244,9 @@ p {
     background-color: white;
 }
 
-
-.tags li {
-    display: inline-block;
-}
 .project-title
 {
     margin-bottom: 8px;
-}
-
-.tags span {
-    background-color: #000;
-    color: #fff;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-    border-radius: 4px !important;
-    background-color: #009688 !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 12px;
 }
 
 .tagcloud span {
@@ -2274,7 +2257,7 @@ p {
     text-transform: uppercase;
     display: inline-block;
     margin-right: 1px;
-    margin-bottom: 4px;
+    margin-top: 4px;
     padding: 10px 15px;
     border: 1px solid #ddd;
     -webkit-border-radius: 2px;
@@ -2283,6 +2266,15 @@ p {
     -webkit-transition: all .15s linear 0s;
     -moz-transition: all .15s linear 0s;
     transition: all .15s linear 0s;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-tags {
+    margin: 0 38px;
 }
 
 .project-title {
